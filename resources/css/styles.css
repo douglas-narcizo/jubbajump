@@ -1,0 +1,276 @@
+html, body, header, p, div, ul, li, a {
+    font-size: 16px;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 100%);
+    background-color: hsla(0, 0%, 20%, 100%);
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+.orange {
+    color: hsla(30, 100%, 50%, 100%);
+}
+
+h1, h2, h3, h4 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    /* display: flex; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.25rem;
+    z-index: 10;
+}
+
+.logo {
+    /* flex: 1 0 18.2rem;
+    width: 18.2rem; */
+    position: relative;
+    left: 5%;
+    padding-top: 0.3rem;
+}
+
+.logo h2 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.logo h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -2.4rem;
+    /* width: 80%;
+    margin-right: 30%; */
+}
+
+nav ul {
+    display: flex;
+    /* padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 23rem; */
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0 0.75rem;
+}
+
+nav a {
+    font-size: 1.125rem;
+    color: hsla(30, 100%, 50%, 100%);
+}
+
+nav a:hover {
+    color: hsla(0, 0%, 100%, 100%);
+}
+
+header h2, h3 {
+    margin: 0 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    color: hsla(30, 100%, 50%, 100%);
+}
+
+body {
+    position: relative;
+    top: 4.25rem;
+}
+
+#mission {
+    margin-bottom: 6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: #0008 0 0 100px;
+    padding: 7rem 3rem;
+    background-image: url(../images/katarzyna-pracuch-IzRqHCdzauw-unsplash-1440.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#vision {
+    margin: 2rem 7.5%;
+}
+
+#vision p {
+    position: relative;
+    top: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 1.5rem;
+}
+
+#categories {
+    display: flex;
+    padding: 2rem 7rem;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cat-block {
+    position: relative;
+    height: 15rem;
+    width: 21%;
+    min-width: 17rem;
+    margin: 0.5rem;
+    /* background-color: hsla(0, 0%, 100%, 70%);
+    color: hsla(30, 100%, 50%, 100%); */
+    text-align: center;
+    overflow: hidden;
+}
+
+.cat-block h3 {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding-top: 20%; */
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    text-shadow: #000A 1px 1px 9px;
+    z-index: 1;
+}
+
+.cat-block img {
+    max-width: 100%;
+    position: relative;
+    top: -35%;
+}
+
+.cat-block-long img {
+    max-height: 100%;
+    width: auto;
+}
+
+#team {
+    background-color: black;
+    padding: 1rem 5%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+    padding-top: 3rem;
+}
+
+.gallery-cell {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.gallery-cell .content {
+    padding: 0.5rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.gallery-cell h3 {
+    margin: 0.75rem 0 0.4rem 1rem;
+}
+
+.gallery-cell p {
+    margin: 0.4rem 0 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.portrait {
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.portrait img {
+    max-width: 300px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        min-height: 6.5rem;    
+    }
+
+    .logo {
+        left: 1rem;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    #vision {
+        margin: 2rem 1rem;
+    }
+
+    #categories {
+        padding: 2rem 1rem;
+    }
+
+    .cat-block {
+        width: 80%;
+    }
+}
+
+.credits-list {
+    margin: 0.75rem;
+}
+
+.credits-list li {
+    margin: 1rem;
+}
+
+.credits-list h3, footer {
+    margin: 2rem 0;
+}
+
+.credits-list a {
+    color: hsla(30, 100%, 50%, 100%);
+}
+
+.credits-list a:hover {
+    color: hsla(0, 0%, 100%, 100%);
+}
