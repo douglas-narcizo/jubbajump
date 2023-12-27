@@ -27,12 +27,13 @@ header {
     width: 100%;
     height: 4.25rem;
     z-index: 10;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 50%);
 }
 
 .logo {
     position: relative;
     left: 5%;
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
 }
 
 .logo h2 {
@@ -101,15 +102,14 @@ header h2, h3 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 2;
+    z-index: 5;
 }
 
 #vision {
     margin: 2rem 7.5%;
-    /* TENTATIVA */
     position: relative;
     top: -4.25rem;
-    padding-top: 4.25rem;
+    padding-top: 5.25rem;
 }
 
 #vision p {
@@ -127,24 +127,28 @@ header h2, h3 {
     justify-content: space-evenly;
     align-content: space-evenly;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 4;
 }
 
 .cat-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 15rem;
-    width: 21%;
-    min-width: 17rem;
+    flex: 1 1 19rem;
+    /* width: 23%;
+    min-width: 17rem; */
     margin: 0.5rem;
-    /* background-color: hsla(0, 0%, 100%, 70%);
-    color: hsla(30, 100%, 50%, 100%); */
-    text-align: center;
+    /* text-align: center; */
     overflow: hidden;
 }
 
 .cat-block h3 {
     margin: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* padding-top: 20%; */
@@ -157,7 +161,7 @@ header h2, h3 {
 .cat-block img {
     max-width: 100%;
     position: relative;
-    top: -35%;
+    /* top: -35%; */
 }
 
 .cat-block-long img {
@@ -167,7 +171,9 @@ header h2, h3 {
 
 #team {
     background-color: black;
-    padding: 1rem 5%;
+    padding: 5.25rem 5%;
+    position: relative;
+    top: -4.25rem;
 }
 
 .gallery {
@@ -219,13 +225,20 @@ footer p {
     font-size: 0.75rem;
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (min-width: 535px) and (max-width: 750px) {
+    nav {
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 534px) {
     html {
         font-size: 12px;
     }
 
     header {
-        min-height: 6.5rem;    
+        min-height: 6rem;    
     }
 
     .logo {
@@ -233,7 +246,7 @@ footer p {
     }
 
     nav {
-        top: 0;
+        top: -0.5rem;
     }
 
     #vision {
