@@ -218,7 +218,9 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem 2rem 0;
+    position: relative;
+    top: -2.5rem;
 }
 
 footer p {
@@ -233,7 +235,7 @@ footer p {
 }
 
 @media only screen and (max-width: 534px) {
-    html {
+    html, body, a {
         font-size: 12px;
     }
 
@@ -280,4 +282,8 @@ footer p {
 
 .credits-list a:hover {
     color: hsla(0, 0%, 100%, 100%);
+}
+
+.credits-list footer {
+    position: static;
 }
