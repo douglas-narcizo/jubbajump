@@ -1,4 +1,4 @@
-# Jubba Jump Lobster Co.
+# Jubba Jump Lobster Co. 🦞
 
 Hi folks!
 
